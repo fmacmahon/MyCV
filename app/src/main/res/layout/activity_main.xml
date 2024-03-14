@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="write your nickname"
+            android:hint="@string/ask_4_nickname"
             android:inputType="text"
             android:text=""
             android:textSize="28sp" />
