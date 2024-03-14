@@ -47,10 +47,27 @@
             android:layout_gravity="center"
             android:text="@string/button" />
 
-        <TextView
-            android:id="@+id/textView_cv"
+        <ScrollView
+            android:id="@+id/show_CV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cv" />
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="10dp"
+                    android:text="@string/cv"
+                    android:textAlignment="textStart"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
