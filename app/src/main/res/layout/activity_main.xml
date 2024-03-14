@@ -23,8 +23,8 @@
             />
 
         <TextView
-            android:id="@+id/textView_information"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView_ask_4_nickname"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/msg"
             android:textSize="28sp" />
@@ -40,7 +40,7 @@
             android:textSize="28sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_show_cv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -52,21 +52,16 @@
             android:layout_height="match_parent"
             android:visibility="gone">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text="@string/cv"
+            android:textAlignment="textStart"
+            android:visibility="visible" />
 
-                <TextView
-                    android:id="@+id/textView_cv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingMultiplier="1.2"
-                    android:padding="10dp"
-                    android:text="@string/cv"
-                    android:textAlignment="textStart"
-                    android:visibility="visible" />
-            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
